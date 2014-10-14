@@ -9,7 +9,8 @@
   :serial t
   :pathname "src/"
   :components ((:file "package")
-               (:file "broadview-host-mush")))
+               (:file "broadview-host-mush")
+               (:file "cli")))
 
 (asdf:defsystem #:broadview-host-mush/tests
   :description "Tests for broadview-host-mush"

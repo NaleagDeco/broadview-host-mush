@@ -1,10 +1,1 @@
-require 'clucumber'
-
-begin
-  @main_clucumber = ClucumberSubprocess.launch(File.expand_path("../", File.dirname(__FILE__)))
-  @main_clucumber.listen <<-LISP
-  LISP
-rescue PTY::ChildExited
-  STDERR.puts "Clucumber failed to launch:"
-  STDERR.puts(@main_clucumber && @main_clucumber.output)
-end
+require 'aruba/cucumber'

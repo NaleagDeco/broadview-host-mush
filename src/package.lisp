@@ -4,3 +4,6 @@
 
 (defpackage #:broadview-host-mush
   (:use #:cl))
+
+(defpackage #:broadview-host-mush-cli
+  (:use #:cl))
